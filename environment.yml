@@ -1,0 +1,46 @@
+name: dswx_val
+channels:
+ - conda-forge
+dependencies:
+ - python
+ - jupyter
+ - jupytext
+ - ipykernel
+ - rasterio
+ - shapely
+ - asf_search
+ - dateparser
+ - requests
+ - nbdime
+ - numpy
+ - matplotlib
+ - fiona
+ - geopandas
+ - gdal
+ - boto3
+ - tqdm
+ - pip
+ - notebook
+ - jupyterlab
+ - planet
+ - pytest
+ - contextily
+ - scikit-image
+ - scikit-learn
+ - pyyaml
+ - pydantic
+ - click
+ - flake8
+ - flake8-blind-except
+ - flake8-builtins
+ - flake8-import-order
+ - pystac-client
+ - python-dotenv
+ - dem_stitcher>=2.5.4
+ - jinja2
+ - wget
+ # PyPI has newer versions compatible with HySDS
+ - pip:
+   - elasticsearch==7.13.4 # https://github.com/nasa/opera-sds-pcm/blob/develop/setup.py#L74
+   - elasticsearch-dsl<8.0 # To ensure version 7 is compatible: https://elasticsearch-dsl.readthedocs.io/en/latest/#compatibility
+   - papermill>=2.5.0
