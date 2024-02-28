@@ -77,3 +77,6 @@ __pycache__/
 
 # Ignore json
 *.json
+
+# add data geojson back
+!s1_ids_for_val.geojson
